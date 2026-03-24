@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Saleh Ahmed — Python Learner, Ethical Hacking Enthusiast, Virtual Assistant. Personal portfolio showcasing skills, projects and services." />
+  <title>Saleh Ahmed | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ──────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero"><span>&lt;</span>SA<span>/&gt;</span></a>
+      <button class="burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─────────────────────────────────────────────── -->
+  <section id="hero">
+    <canvas id="grid-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-tag"><span class="blink">▍</span> &nbsp;Hello, World!</p>
+      <h1 class="hero-name">Saleh<br /><em>Ahmed</em></h1>
+      <p class="hero-title">
+        <span class="type-wrap" id="typed-title"></span>
+      </p>
+      <p class="hero-tagline">
+        Building clean automations, securing systems,<br />
+        and delivering seamless virtual support — one line at a time.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+        <a href="#projects" class="btn btn-ghost">View Projects</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">scroll down <span class="arrow">↓</span></div>
+  </section>
+
+  <!-- ─── ABOUT ─────────────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 /</span>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm <strong>Saleh Ahmed</strong>, a passionate self-learner based in Bangladesh who is 
+            steadily building expertise at the intersection of <em>Python programming</em>, 
+            <em>ethical hacking</em>, and <em>virtual assistance</em>.
+          </p>
+          <p>
+            My journey started with a curiosity about how things work under the hood — from scripts 
+            that automate tedious tasks to understanding the vulnerabilities that keep systems insecure. 
+            I pair that technical mindset with strong multilingual communication skills to deliver 
+            real value to clients and teams worldwide.
+          </p>
+          <p>
+            I believe in learning in public, building things that matter, and always leaving 
+            systems better than I found them.
+          </p>
+        </div>
+
+        <div class="skills-wrap">
+          <h3>Skills &amp; Tools</h3>
+          <ul class="skill-list">
+            <li><span class="skill-dot"></span>Python (scripting &amp; automation)</li>
+            <li><span class="skill-dot"></span>Ethical Hacking fundamentals</li>
+            <li><span class="skill-dot"></span>Linux &amp; command-line tools</li>
+            <li><span class="skill-dot"></span>Virtual assistance &amp; scheduling</li>
+            <li><span class="skill-dot"></span>Data entry &amp; research</li>
+            <li><span class="skill-dot"></span>English · Bengali · Russian</li>
+            <li><span class="skill-dot"></span>Git &amp; GitHub basics</li>
+            <li><span class="skill-dot"></span>HTML &amp; CSS fundamentals</li>
+          </ul>
+
+          <div class="lang-bars">
+            <div class="lang-item">
+              <span>Python</span>
+              <div class="bar"><div class="bar-fill" data-w="60"></div></div>
+            </div>
+            <div class="lang-item">
+              <span>Linux / CLI</span>
+              <div class="bar"><div class="bar-fill" data-w="55"></div></div>
+            </div>
+            <div class="lang-item">
+              <span>Ethical Hacking</span>
+              <div class="bar"><div class="bar-fill" data-w="45"></div></div>
+            </div>
+            <div class="lang-item">
+              <span>Virtual Assistant</span>
+              <div class="bar"><div class="bar-fill" data-w="80"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ──────────────────────────────────────────── -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 /</span>
+        <h2>Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="card">
+          <div class="card-top">
+            <span class="card-icon">🔐</span>
+            <span class="card-lang">Python</span>
+          </div>
+          <h3>Password Strength Checker</h3>
+          <p>A command-line tool that evaluates password strength using entropy analysis, pattern detection, and common-breach lookups — with colour-coded terminal output.</p>
+          <div class="card-footer">
+            <a href="#" class="card-link" aria-label="View project">View →</a>
+            <a href="#" class="card-link" aria-label="Source code">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="card-icon">🤖</span>
+            <span class="card-lang">Python</span>
+          </div>
+          <h3>File Organiser Bot</h3>
+          <p>Automation script that watches a folder and intelligently sorts files into categorised subdirectories by extension, date, and size — fully configurable via JSON.</p>
+          <div class="card-footer">
+            <a href="#" class="card-link" aria-label="View project">View →</a>
+            <a href="#" class="card-link" aria-label="Source code">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="card-icon">🌐</span>
+            <span class="card-lang">Python · Requests</span>
+          </div>
+          <h3>Port Scanner</h3>
+          <p>A lightweight, multi-threaded port scanning utility built for educational purposes in ethical hacking labs. Displays open ports, services, and response banners.</p>
+          <div class="card-footer">
+            <a href="#" class="card-link" aria-label="View project">View →</a>
+            <a href="#" class="card-link" aria-label="Source code">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="card-icon">📋</span>
+            <span class="card-lang">Python · CSV</span>
+          </div>
+          <h3>VA Task Tracker</h3>
+          <p>A minimal task and time-tracking CLI designed for virtual assistants — logs tasks, generates daily summaries, and exports clean CSV reports for clients.</p>
+          <div class="card-footer">
+            <a href="#" class="card-link" aria-label="View project">View →</a>
+            <a href="#" class="card-link" aria-label="Source code">GitHub →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ──────────────────────────────────────────── -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 /</span>
+        <h2>Services</h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">🗂️</div>
+          <h3>Virtual Assistant</h3>
+          <p>Professional email management, calendar scheduling, data entry, research, and client communication — reliable and detail-oriented remote support.</p>
+          <ul>
+            <li>Email &amp; inbox management</li>
+            <li>Scheduling &amp; coordination</li>
+            <li>Web research &amp; reporting</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>Basic Python Automation</h3>
+          <p>Save hours on repetitive tasks with custom Python scripts — file handling, web scraping, report generation, and workflow automation.</p>
+          <ul>
+            <li>File &amp; folder automation</li>
+            <li>Data cleaning scripts</li>
+            <li>Scheduled task bots</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🌍</div>
+          <h3>Translation Services</h3>
+          <p>Accurate and natural translation between English, Bengali, and Russian — documents, emails, websites, or any text-based content.</p>
+          <ul>
+            <li>English ↔ Bengali</li>
+            <li>English ↔ Russian</li>
+            <li>Bengali ↔ Russian</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────────── -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 /</span>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <p>Have a project in mind, need a virtual assistant, or just want to say hello? Drop me a message and I'll get back to you within 24 hours.</p>
+          <div class="contact-detail">
+            <span class="cd-label">Email</span>
+            <a href="mailto:salehahmed@example.com">salehahmed@example.com</a>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-label">Location</span>
+            <span>Dhaka, Bangladesh</span>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-label">Available</span>
+            <span class="avail-badge">Open to work ✓</span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-w">Send Message</button>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────── -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="nav-logo"><span>&lt;</span>SA<span>/&gt;</span></span>
+      <p>© 2025 Saleh Ahmed. Built with ♥ and vanilla code.</p>
+      <div class="footer-links">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
