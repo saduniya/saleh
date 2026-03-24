@@ -233,19 +233,42 @@
       return;
     }
 
-    /* Simulate send (no backend) */
+    /* Send via Web3Forms */
     const btn = form.querySelector('button[type="submit"]');
     btn.disabled     = true;
     btn.textContent  = 'Sending…';
     status.textContent = '';
 
-    setTimeout(() => {
-      form.reset();
-      status.textContent = '✓ Message sent! I\'ll be in touch within 24 hours.';
-      status.className   = 'form-status success';
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        access_key: '8a350f83-245b-449e-af7f-87a4c0e394f4',
+        name:    form.name.value.trim(),
+        email:   form.email.value.trim(),
+        subject: form.subject.value.trim() || 'Portfolio Contact',
+        message: form.message.value.trim(),
+      })
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data.success) {
+        form.reset();
+        status.textContent = '✓ Message sent! I\'ll be in touch within 24 hours.';
+        status.className   = 'form-status success';
+      } else {
+        status.textContent = '⚠ Something went wrong. Please try again.';
+        status.className   = 'form-status error';
+      }
       btn.disabled    = false;
       btn.textContent = 'Send Message';
-    }, 1400);
+    })
+    .catch(() => {
+      status.textContent = '⚠ Network error. Please check your connection and try again.';
+      status.className   = 'form-status error';
+      btn.disabled    = false;
+      btn.textContent = 'Send Message';
+    });
   });
 })();
 
